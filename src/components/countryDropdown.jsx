@@ -1,11 +1,11 @@
 import React from 'react'
 
-const countryDropdown = () => {
+const CountryDropdown = () => {
   return (
     <div>
-      
+      CountryDropdown
     </div>
   )
 }
 
-export default countryDropdown
+export default CountryDropdown;

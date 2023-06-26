@@ -1,11 +1,11 @@
 import React from 'react'
 
-const propertyDropdown = () => {
+const PropertyDropdown = () => {
   return (
     <div>
-      
+      PropertyDropdown
     </div>
   )
 }
 
-export default propertyDropdown
+export default PropertyDropdown;
