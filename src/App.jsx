@@ -1,13 +1,6 @@
-import { useState } from 'react'
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Banner from './components/banner';
-import CountryDropdown from './components/countryDropdown';
+import { Route, Routes, BrowserRouter} from 'react-router-dom';
 import Header from './components/header';
-import House from './components/house';
-import PriceDropdown from './components/priceDropdown';
-import PropertyDropdown from './components/propertyDropdown';
-import Search from './components/search';
 import Footer from './components/footer';
 
 // importing page folder
@@ -21,10 +14,13 @@ function App() {
   return (
     <div>
       <Header />
+      <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/property/:id' element={<PropertyDetails />} />
+        <Route index Component={Home} />
+        <Route path="/Home" Component={Home} />
+        <Route path="/PropertyDetails" Component={PropertyDetails} />
       </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
 
