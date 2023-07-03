@@ -8,12 +8,7 @@ export default {
     fontFamily: {
       primary: 'Poppins',
     },
-    container: {
-      padding: {
-        default: '1rem',
-        lg: '2rem',
-      },
-    },
+    
     screens: {
       sm: '640px',
       md: '768',
@@ -25,10 +20,7 @@ export default {
       primary: '#101828',
       secondary: '#7f56D0',
       },
-      boxShadow: {
-      1: '0px 4px 30px rgba(0, 0, 0, 0.8)',
       },
-    },
   },
   plugins: [],
 };
